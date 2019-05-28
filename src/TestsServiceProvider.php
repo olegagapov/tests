@@ -12,6 +12,7 @@ class TestsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        dd(__METHOD__, __DIR__.'/../config/package_tests.php', config_path('package_tests.php'));
         $this->publishes([
             __DIR__.'/../config/package_tests.php' => config_path('package_tests.php'),
         ], 'package-tests-config');
@@ -23,6 +24,7 @@ class TestsServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        dd(__METHOD__, __DIR__.'/../config/package_tests.php', config_path('package_tests.php'));
         $this->mergeConfigFrom(
             __DIR__.'/../config/package_tests.php',
             'package_tests'
@@ -36,7 +38,7 @@ class TestsServiceProvider extends ServiceProvider
 // And in the register method, we tell the Laravel app to add the config options from
 // our file into the web app config. Commit the update and let’s create our config file next.
 
-
+// composer require OlegAgapov/Tests
 // cd packages/OlegAgapov/Tests/src/config
 // cd ../../../../
 
