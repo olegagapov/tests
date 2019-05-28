@@ -1,0 +1,13 @@
+{
+    "name": "olegagapov/tests",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Agapov",
+            "email": "oleg@na77.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
