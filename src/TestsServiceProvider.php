@@ -35,3 +35,8 @@ class TestsServiceProvider extends ServiceProvider
 
 // And in the register method, we tell the Laravel app to add the config options from
 // our file into the web app config. Commit the update and let’s create our config file next.
+
+
+// cd packages/OlegAgapov/Tests/src/config
+// cd ../../../../
+
