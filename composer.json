@@ -26,8 +26,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AlexClaimer\\Tests\\Providers\\TestsServiceProvider",
-                "AlexClaimer\\Tests\\Providers\\TestsDummyServiceProvider"
+                "AlexClaimer\\Tests\\App\\Providers\\TestsServiceProvider",
+                "AlexClaimer\\Tests\\App\\Providers\\TestsDummyServiceProvider"
             ]
         },
         "branch-alias": {
