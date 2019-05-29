@@ -7,23 +7,28 @@
             "name": "Oleg Agapov",
             "email": "oleg@na77.ru"
         }
-    ],    "autoload": {
-    "psr-4": {
-        "OlegAgapov\\Tests\\": "src/"
-    }
-},
+    ],
+    "autoload": {
+        "psr-4": {
+            "OlegAgapov\\Tests\\": "src/"
+        }
+    },
     "autoload-dev": {
         "psr-4": {
             "OlegAgapov\\Tests\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
-                "OlegAgapov\\Tests\\TestsServiceProvider",
+                "OlegAgapov\\Tests\\Providers\\TestsServiceProvider",
                 "OlegAgapov\\Tests\\Providers\\TestsDummyServiceProvider"
             ]
+        },
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     },
     "require": {
@@ -47,11 +52,6 @@
             "php artisan ide-helper:generate",
             "php artisan ide-helper:meta"
         ]
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "https://github.com/olegagapov/tests.git"
-        }
-    ]
+    }
+
 }
