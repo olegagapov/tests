@@ -1,6 +1,7 @@
 {
     "name": "olegagapov/tests",
-    "type": "project",
+    "type": "library",
+    "description": "description: olegagapov/tests library",
     "license": "MIT",
     "authors": [
         {
@@ -10,12 +11,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "OlegAgapov\\Tests\\": "src/"
+            "AlexClaimer\\Tests\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OlegAgapov\\Tests\\Tests\\": "tests/"
+            "AlexClaimer\\Tests\\": "src/",
+            "AlexClaimer\\Tests\\App\\": "src/app/",
+            "AlexClaimer\\Tests\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
@@ -23,8 +26,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OlegAgapov\\Tests\\Providers\\TestsServiceProvider",
-                "OlegAgapov\\Tests\\Providers\\TestsDummyServiceProvider"
+                "AlexClaimer\\Tests\\Providers\\TestsServiceProvider",
+                "AlexClaimer\\Tests\\Providers\\TestsDummyServiceProvider"
             ]
         },
         "branch-alias": {
@@ -37,21 +40,13 @@
         "intervention/image": "^2.4"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.2",
-        "barryvdh/laravel-ide-helper": "^2.6",
         "phpunit/phpcov": "~4.0|~5.0|~6.0",
         "phpunit/phpunit": "~5.7.14|~6.1|~7.0|~8.0",
         "laravel/framework": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
         "orchestra/testbench": "~3.0",
         "laravel/browser-kit-testing": "~2.0.0|~3.0.0|~4.0.0|~5.0.0|~5.1",
         "orchestra/testbench-browser-kit": "~3.5|~3.6|~3.7|~3.8"
-    },
-    "scripts": {
-        "post-update-cmd": [
-            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta"
-        ]
     }
+
 
 }

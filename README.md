@@ -6,15 +6,17 @@ php artisan vendor:publish --tag=package-tests-config
 And in the register method, we tell the Laravel app to add the config options from
 our file into the web app config. Commit the update and let’s create our config file next.
 
-composer require OlegAgapov/Tests --dev
+composer require AlexClaimer/Tests --dev
 
 
 
-cd packages/OlegAgapov/Tests/src/config
+cd packages/AlexClaimer/Tests/src/config
 
 cd ../../../../../
 
 
-cd packages/OlegAgapov/Tests
+cd packages/AlexClaimer/Tests
 
 cd ../../../
+
+composer dump-autoload

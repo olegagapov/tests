@@ -1,5 +1,5 @@
 <?php
-namespace OlegAgapov\Tests\Providers;
+namespace AlexClaimer\Tests\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -32,10 +32,10 @@ class TestsDummyServiceProvider extends ServiceProvider
 // And in the register method, we tell the Laravel app to add the config options from
 // our file into the web app config. Commit the update and let’s create our config file next.
 
-// composer require OlegAgapov/Tests
+// composer require AlexClaimer/Tests
 
-// cd packages/OlegAgapov/Tests/src/config
+// cd packages/AlexClaimer/Tests/src/config
 // cd ../../../../../
-// cd packages/OlegAgapov/Tests
+// cd packages/AlexClaimer/Tests
 // cd ../../../
 
